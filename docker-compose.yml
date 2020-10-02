@@ -5,16 +5,18 @@ services:
     image: postgres:11-alpine
     environment:
       POSTGRES_DB: wiki
-      POSTGRES_PASSWORD: wikijsrocks
       POSTGRES_USER: wikijs
+      POSTGRES_PASSWORD_FILE: /etc/wiki/.db-secret
     logging:
       driver: "none"
     restart: unless-stopped
     volumes:
       - db-data:/var/lib/postgresql/data
+      - /etc/wiki/.db-secret:/etc/wiki/.db-secret:ro
+    networks: wikinet
 
   wiki:
-    image: requarks/wiki:2
+    image: solareenlo/wiki:latest
     depends_on:
       - db
     environment:
@@ -22,11 +24,15 @@ services:
       DB_HOST: db
       DB_PORT: 5432
       DB_USER: wikijs
-      DB_PASS: wikijsrocks
+      DB_PASS_FILE: /etc/wiki/.db-secret
       DB_NAME: wiki
+      UPGRADE_COMPANION: 1
+    volumes: /etc/wiki/.db-secret:/etc/wiki/.db-secret:ro
     restart: unless-stopped
+    networks: wikinet
     ports:
       - "80:3000"
+      - "443:3443"
 
 volumes:
   db-data:
