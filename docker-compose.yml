@@ -11,9 +11,10 @@ services:
       driver: "none"
     restart: unless-stopped
     volumes:
-      - db-data:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data
       - /etc/wiki/.db-secret:/etc/wiki/.db-secret:ro
-    networks: wikinet
+    networks:
+      - wikinet
 
   wiki:
     image: solareenlo/wiki:latest
@@ -27,12 +28,16 @@ services:
       DB_PASS_FILE: /etc/wiki/.db-secret
       DB_NAME: wiki
       UPGRADE_COMPANION: 1
-    volumes: /etc/wiki/.db-secret:/etc/wiki/.db-secret:ro
+    volumes:
+      - /etc/wiki/.db-secret:/etc/wiki/.db-secret:ro
     restart: unless-stopped
-    networks: wikinet
     ports:
       - "80:3000"
       - "443:3443"
-
+    networks:
+      - wikinet
+networks:
+  wikinet:
+    external: true
 volumes:
-  db-data:
+  pgdata:
