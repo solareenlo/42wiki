@@ -28,6 +28,9 @@ services:
       DB_PASS_FILE: /etc/wiki/.db-secret
       DB_NAME: wiki
       UPGRADE_COMPANION: 1
+      LETSENCRYPT_DOMAIN: private.tangle.jp
+      LETSENCRYPT_EMAIL: solareenlo@protonmail.com
+      SSL_ACTIVE: 1
     volumes:
       - /etc/wiki/.db-secret:/etc/wiki/.db-secret:ro
     restart: unless-stopped
