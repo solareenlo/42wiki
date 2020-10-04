@@ -8,7 +8,7 @@ const FortyTwoStrategy = require('passport-42').Strategy
 
 module.exports = {
   init (passport, conf) {
-    passport.use('fortytwo',
+    passport.use('42',
       new FortyTwoStrategy({
         clientID: conf.clientId,
         clientSecret: conf.clientSecret,
@@ -19,6 +19,7 @@ module.exports = {
           const user = await WIKI.models.users.processProfile({
             providerKey: req.params.strategy,
             profile: {
+              id: function (obj) { return String(obj.id); },
               displayName: displayname,
               picture: image_url
             }
