@@ -1,0 +1,20 @@
+key: 42
+title: 42
+description: Born to code?
+author: solareenlo
+logo: https://static.requarks.io/logo/discord.svg
+color: indigo lighten-2
+website: https://42.fr/
+isAvailable: true
+useForm: false
+props:
+  clientId:
+    type: String
+    title: UID
+    hint: Application UID
+    order: 1
+  clientSecret:
+    type: String
+    title: SECRET
+    hint: Application SECRET
+    order: 2
