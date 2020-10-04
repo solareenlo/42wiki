@@ -19,8 +19,7 @@ module.exports = {
           const user = await WIKI.models.users.processProfile({
             providerKey: req.params.strategy,
             profile: {
-              ...profile,
-              id: id,
+              id: function (obf) { return String(obj.id); },
               displayName: displayname,
               picture: image_url
             }
