@@ -8,7 +8,7 @@ const FortyTwoStrategy = require('passport-42').Strategy
 
 module.exports = {
   init (passport, conf) {
-    passport.use('42',
+    passport.use('fortytwo',
       new FortyTwoStrategy({
         clientID: conf.clientId,
         clientSecret: conf.clientSecret,
@@ -30,5 +30,12 @@ module.exports = {
         }
       })
     )
+  },
+  logout (conf) {
+    if (!conf.logoutURL) {
+      return '/'
+    } else {
+      return conf.logoutURL
+    }
   }
 }
