@@ -2,6 +2,7 @@ version: "3"
 services:
 
   db:
+    container_name: db
     image: postgres:11-alpine
     environment:
       POSTGRES_DB: wiki
@@ -17,6 +18,7 @@ services:
       - wikinet
 
   wiki:
+    container_name: wiki
     image: solareenlo/wiki:latest
     depends_on:
       - db
@@ -28,8 +30,8 @@ services:
       DB_PASS_FILE: /etc/wiki/.db-secret
       DB_NAME: wiki
       UPGRADE_COMPANION: 1
-      LETSENCRYPT_DOMAIN: private.tangle.jp
-      LETSENCRYPT_EMAIL: solareenlo@protonmail.com
+      LETSENCRYPT_DOMAIN: 42cursus.dev
+      LETSENCRYPT_EMAIL: 42cursus@protonmail.com
       SSL_ACTIVE: 1
     volumes:
       - /etc/wiki/.db-secret:/etc/wiki/.db-secret:ro
@@ -39,8 +41,10 @@ services:
       - "443:3443"
     networks:
       - wikinet
+
 networks:
   wikinet:
     external: true
+
 volumes:
   pgdata:
