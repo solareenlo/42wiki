@@ -1,5 +1,5 @@
 # 42wiki
-- 42wiki is wiki.js with 42 oauth2.0 added using the passport strategy.
+- 42wiki is wiki.js with 42 oauth2.0 added using [passport-42](https://github.com/pandark/passport-42).
 
 ## Usage
 ```sh
