@@ -19,7 +19,7 @@ services:
 
   wiki:
     container_name: wiki
-    image: solareenlo/wiki:latest
+    image: solareenlo/42wiki:latest
     depends_on:
       - db
     environment:
