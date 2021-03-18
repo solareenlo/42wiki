@@ -29,9 +29,9 @@
   "author": "Nicolas Giard",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/Requarks/wiki/issues"
+    "url": "https://github.com/solareenlo/42wiki/issues"
   },
-  "homepage": "https://github.com/Requarks/wiki#readme",
+  "homepage": "https://github.com/solareenlo/42wiki#readme",
   "engines": {
     "node": ">=10.12"
   },
