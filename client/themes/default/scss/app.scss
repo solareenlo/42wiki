@@ -77,6 +77,10 @@
     & + h2, & + h3, & + h4, & + h5, & + h6 {
       margin-top: 8px;
     }
+    
+    & + hr.footnotes-sep {
+      display: none;
+    }
   }
 
   h1 {
@@ -804,15 +808,27 @@
       border-radius: 7px;
       background-color: mc('grey', '50');
       cursor: pointer;
-      height: 40px;
-      display: flex;
+      display: list-item;
       align-items: center;
-      padding: 0 1rem;
+      padding: 0.4rem 1rem;
       transition: background-color .4s ease;
 
       &:focus {
         outline: none;
         background-color: mc('grey', '100');
+      }
+      
+      > h1, h2, h3, h4, h5, h6 {
+        width: 95%;
+        display: inline-block;
+        
+        &:first-child {
+          margin-top: 0;
+        }
+        
+        &:only-child::after {
+          display: none;
+        }
       }
     }
 
