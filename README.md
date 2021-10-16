@@ -5,8 +5,8 @@
 ```sh
 git clone git@github.com:solareenlo/42wiki.git
 cd 42wiki
-sudo docker-compose up -d
-sudo docker-compose down
+sudo docker compose up -d
+sudo docker compose down
 ```
 
 ↓ Original
