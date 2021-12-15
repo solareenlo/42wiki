@@ -1,5 +1,7 @@
-# 42wiki
-- 42wiki is wiki.js with 42 oauth2.0 added using [passport-42](https://github.com/pandark/passport-42).
+# [42wiki](https://github.com/solareenlo/42wiki)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/solareenlo/42wiki/latest) ![Docker Pulls](https://img.shields.io/docker/pulls/solareenlo/42wiki)
+
+42wiki is wiki.js with 42 oauth2.0 added using [passport-42](https://github.com/pandark/passport-42).
 
 ## Usage
 ```sh
