@@ -100,7 +100,13 @@ module.exports = class Asset extends Model {
     }
 
     // Sanitize SVG contents
-    if (WIKI.config.uploads.scanSVG && opts.mimetype === 'image/svg+xml') {
+    if (
+      WIKI.config.uploads.scanSVG &&
+      (
+        opts.mimetype.toLowerCase().startsWith('image/svg') ||
+        fileInfo.ext.toLowerCase() === '.svg'
+      )
+    ) {
       const svgSanitizeJob = await WIKI.scheduler.registerJob({
         name: 'sanitize-svg',
         immediate: true,
@@ -162,8 +168,15 @@ module.exports = class Asset extends Model {
 
   static async getAsset(assetPath, res) {
     try {
+      const fileInfo = assetHelper.getPathInfo(assetPath)
       const fileHash = assetHelper.generateHash(assetPath)
       const cachePath = path.resolve(WIKI.ROOTPATH, WIKI.config.dataPath, `cache/${fileHash}.dat`)
+
+      // Force unsafe extensions to download
+      if (WIKI.config.uploads.forceDownload && !['.png', '.apng', '.jpg', '.jpeg', '.gif', '.bmp', '.webp', '.svg'].includes(fileInfo.ext)) {
+        res.set('Content-disposition', 'attachment; filename=' + fileInfo.base)
+      }
+
       if (await WIKI.models.assets.getAssetFromCache(assetPath, cachePath, res)) {
         return
       }
