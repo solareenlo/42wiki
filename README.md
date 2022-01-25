@@ -68,6 +68,22 @@ Wiki.js is an open source project that has been made possible due to the generou
 
 </div>
 
+<h2 align="center">Gold Tier Sponsors</h2>
+
+<div align="center">
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="middle" width="444">
+        <a href="https://trans-zero.com/" target="_blank">
+          <img src="https://cdn.js.wiki/images/sponsors/transzero.png">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <h2 align="center">GitHub Sponsors</h2>
 
 Support this project by becoming a sponsor. Your name will show up in the Contribute page of all Wiki.js installations as well as here with a link to your website! [[Become a sponsor](https://github.com/users/NGPixel/sponsorship)]
@@ -137,6 +153,7 @@ Support this project by becoming a sponsor. Your name will show up in the Contri
 
 - Akira Suenami ([@a-suenami](https://github.com/a-suenami))
 - Arnaud Marchand ([@snuids](https://github.com/snuids))
+- Brian Douglass ([@bhdouglass](https://github.com/bhdouglass))
 - Bryon Vandiver ([@asterick](https://github.com/asterick))
 - Cameron Steele ([@ATechAdventurer](https://github.com/ATechAdventurer))
 - Cloud Data Hosting LLC ([@CloudDataHostingLLC](https://github.com/CloudDataHostingLLC))
@@ -152,6 +169,7 @@ Support this project by becoming a sponsor. Your name will show up in the Contri
 - Jay Lee ([@polyglotm](https://github.com/polyglotm))
 - Kelly Wardrop ([@dropcoded](https://github.com/dropcoded))
 - Loki ([@binaryloki](https://github.com/binaryloki))
+- MaFarine ([@MaFarine](https://github.com/MaFarine))
 - Marcilio Leite Neto ([@marclneto](https://github.com/marclneto))
 - Mattias Johnson ([@mattiasJohnson](https://github.com/mattiasJohnson))
 - Mitchell Rowton ([@mrowton](https://github.com/mrowton))
@@ -163,6 +181,7 @@ Support this project by becoming a sponsor. Your name will show up in the Contri
 - Robert Lanzke ([@winkelement](https://github.com/winkelement))
 - Sam Martin ([@winkelement](https://github.com/ABitMoreDepth))
 - Sean Coffey ([@seanecoffey](https://github.com/seanecoffey))
+- Stephan Kristyn ([@stevek-pro](https://github.com/stevek-pro))
 - Theodore Chu ([@TheodoreChu](https://github.com/TheodoreChu))
 - Tyler Denman ([@tylerguy](https://github.com/tylerguy))
 - Victor Bilgin ([@vbilgin](https://github.com/vbilgin))
@@ -378,5 +397,8 @@ This project exists thanks to all the people who contribute. [[Contribute]](http
 ![Netlify](https://wiki.js.org/legacy/logo_netlify.png)
 [Netlify](https://www.netlify.com) for providing hosting for landings and blog websites.
 
-![Porkbun](https://static.requarks.io/logo/porkbun.png)
+![ngrok](https://static.requarks.io/logo/ngrok-h40.png)  
+[ngrok](https://ngrok.com) for providing haccess to their great HTTP tunneling services.
+
+![Porkbun](https://static.requarks.io/logo/porkbun.png)  
 [Porkbun](https://www.porkbun.com) for providing domain registration services.
