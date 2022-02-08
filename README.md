@@ -22,7 +22,7 @@ sudo docker compose down
 [![Backers on Open Collective](https://opencollective.com/wikijs/all/badge.svg)](https://opencollective.com/wikijs)
 [![Downloads](https://img.shields.io/github/downloads/Requarks/wiki/total.svg?style=flat&logo=github)](https://github.com/Requarks/wiki/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/requarks/wiki.svg?logo=docker&logoColor=white)](https://hub.docker.com/r/requarks/wiki/)  
-[![Build status](https://dev.azure.com/requarks/wiki/_apis/build/status/build)](https://dev.azure.com/requarks/wiki/_build/latest?definitionId=9)
+[![Build + Publish](https://github.com/Requarks/wiki/actions/workflows/build.yml/badge.svg)](https://github.com/Requarks/wiki/actions/workflows/build.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wiki&metric=alert_status)](https://sonarcloud.io/dashboard?id=wiki)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=wiki&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=wiki)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=wiki&metric=security_rating)](https://sonarcloud.io/dashboard?id=wiki)
@@ -172,6 +172,7 @@ Support this project by becoming a sponsor. Your name will show up in the Contri
 - MaFarine ([@MaFarine](https://github.com/MaFarine))
 - Marcilio Leite Neto ([@marclneto](https://github.com/marclneto))
 - Mattias Johnson ([@mattiasJohnson](https://github.com/mattiasJohnson))
+- Max Ricketts-Uy ([@MaxRickettsUy](https://github.com/MaxRickettsUy))
 - Mitchell Rowton ([@mrowton](https://github.com/mrowton))
 - M. Scott Ford ([@mscottford](https://github.com/mscottford))
 - Nick Halase ([@nhalase](https://github.com/nhalase))
@@ -179,7 +180,7 @@ Support this project by becoming a sponsor. Your name will show up in the Contri
 - Noel Cower ([@nilium](https://github.com/nilium))
 - Philipp Schmitt ([@pschmitt](https://github.com/pschmitt))
 - Robert Lanzke ([@winkelement](https://github.com/winkelement))
-- Sam Martin ([@winkelement](https://github.com/ABitMoreDepth))
+- Sam Martin ([@ABitMoreDepth](https://github.com/ABitMoreDepth))
 - Sean Coffey ([@seanecoffey](https://github.com/seanecoffey))
 - Stephan Kristyn ([@stevek-pro](https://github.com/stevek-pro))
 - Theodore Chu ([@TheodoreChu](https://github.com/TheodoreChu))
@@ -376,16 +377,16 @@ This project exists thanks to all the people who contribute. [[Contribute]](http
 
 <h2 align="center">Special Thanks</h2>
 
-![Algolia](https://wiki.js.org/legacy/logo_algolia.png)
+![Algolia](https://js.wiki/legacy/logo_algolia.png)  
 [Algolia](https://www.algolia.com/) for providing access to their incredible search engine.
 
-![Browserstack](https://wiki.js.org/legacy/logo_browserstack.png)
+![Browserstack](https://js.wiki/legacy/logo_browserstack.png)  
 [Browserstack](https://www.browserstack.com/) for providing access to their great cross-browser testing tools.
 
-![Cloudflare](https://wiki.js.org/legacy/logo_cloudflare.png)
+![Cloudflare](https://js.wiki/legacy/logo_cloudflare.png)  
 [Cloudflare](https://www.cloudflare.com/) for providing their great CDN, SSL and advanced networking services.
 
-![DigitalOcean](https://wiki.js.org/legacy/logo_digitalocean.png)
+![DigitalOcean](https://js.wiki/legacy/logo_digitalocean.png)  
 [DigitalOcean](https://m.do.co/c/5f7445bfa4d0) for providing hosting of the Wiki.js documentation site.
 
 ![Icons8](https://static.requarks.io/logo/icons8-text-h40.png)
@@ -394,11 +395,11 @@ This project exists thanks to all the people who contribute. [[Contribute]](http
 ![Lokalise](https://static.requarks.io/logo/lokalise-text-h40.png)
 [Lokalise](https://lokalise.com/) for providing access to their great localization tool.
 
-![Netlify](https://wiki.js.org/legacy/logo_netlify.png)
+![Netlify](https://js.wiki/legacy/logo_netlify.png)  
 [Netlify](https://www.netlify.com) for providing hosting for landings and blog websites.
 
 ![ngrok](https://static.requarks.io/logo/ngrok-h40.png)  
-[ngrok](https://ngrok.com) for providing haccess to their great HTTP tunneling services.
+[ngrok](https://ngrok.com) for providing access to their great HTTP tunneling services.
 
 ![Porkbun](https://static.requarks.io/logo/porkbun.png)  
 [Porkbun](https://www.porkbun.com) for providing domain registration services.
